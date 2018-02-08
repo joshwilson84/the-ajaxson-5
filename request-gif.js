@@ -58,7 +58,7 @@ function fetchAndDisplayGif(event) {
     $("#feedback").text("Loading......").css({"color":"blue"});
     setGifLoadedStatus(false);
 } else {
-    $("#feedback").text("You're a ROBOT!");
+    $("#feedback").text("You're a ROBOT!").css({"color":"red"});
     setGifLoadedStatus(false);
 };
 
