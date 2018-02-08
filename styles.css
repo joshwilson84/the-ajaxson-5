@@ -1,0 +1,47 @@
+.jumbotron{
+    text-align: center;
+    color: blue;
+}
+
+body{
+    max-width: 100%;
+    center: auto;
+    background-color: lightgrey;
+
+
+}
+
+#captcha{
+    width: 32px;
+}
+
+form{
+
+    text-align: center;
+    border: 10px red
+    border-radius: 10px
+
+}
+
+
+
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 10px red
+    border-radius: 10px;
+
+}
+
+#feedback{
+    text-align: center;
+    color: red;
+    font-size: 40px;
+}
+
+#loading{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+}
