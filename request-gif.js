@@ -17,7 +17,7 @@ function fetchAndDisplayGif(event) {
     // This prevents the form submission from doing what it normally does: send a request (which would cause our page to refresh).
     // Because we will be making our own AJAX request, we dont need to send a normal request and we definitely don't want the page to refresh.
     event.preventDefault();
-    $(".error-message").text("")
+
 
     if($("#captcha").val() == 5 || $("#captcha").val().toLowerCase() == "five") {
     
@@ -51,14 +51,14 @@ function fetchAndDisplayGif(event) {
             // if something went wrong, the code in here will execute instead of the success function
             
             // give the user an error message
-            $("#feedback").text("Sorry, could not load GIF. Try again!");
+            $("#feedback").text("Sorry, could not load GIF. Try again later!");
             setGifLoadedStatus(false);
         }
     });
     $("#feedback").text("Loading......").css({"color":"blue"});
     setGifLoadedStatus(false);
 } else {
-    $("#feedback").css({"color":"red"}).text("You're a ROBOT!");
+    $("#feedback").css({"color":"red"}).text("I think you're a ROBOT!");
     setGifLoadedStatus(false);
 };
 
